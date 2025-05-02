@@ -63,7 +63,7 @@ main {
 
 /*formato para los cajones del menu principal*/
 nav > ul > li > a {
-    width: 190px; /* Fijás un ancho en px o em */
+    width: 100%; /* Fijás un ancho en px o em */
     height: 100%;
     display: flex;
     align-items: center;
