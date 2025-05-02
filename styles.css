@@ -344,8 +344,9 @@ nav > ul > li > ul > li > ul > li > ul > li > a:hover{
 
 /* Estilos para tarjetas de la página de inicio*/
 
-.tarjeta {
-    width: 250px;
+
+ .tarjeta {
+    width: 300px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 12px;
@@ -391,6 +392,7 @@ nav > ul > li > ul > li > ul > li > ul > li > a:hover{
     background-color: #34ACD5;
   }
   
+  /*configuracion para que sea automatico
   .tarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -398,7 +400,18 @@ nav > ul > li > ul > li > ul > li > ul > li > a:hover{
     padding: 40px;
     justify-items: center;
   }
-  
+ 
+  */
+
+    .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Siempre tres columnas */
+    gap: 30px;
+    padding: 40px;
+    justify-items: center; /* Centra los elementos dentro de cada celda */
+}
+
+
 
 
 /************/
