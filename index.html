@@ -17,9 +17,11 @@
             <div class="logo">
                 <img src="logo_sanitas.png" alt="">
             </div>
-            <div class="search"> 
-                <input type="search" placeholder="¿Qué deseas buscar?">
-            </div>
+
+            <div class="search">
+                <input type="text" id="searchMenu" placeholder="Buscar sección...">
+              </div>
+              
         </div>
 
         <div class="container__menu">
@@ -32,13 +34,13 @@
                                 <li><a href="#"><i class="fas fa-file-alt"></i>PQR</a>
                                     <ul>
                                         <li><a href="#"><i class="fas fa-chart-area"></i>Tasa</a>
-                                            <ul>
+                                            <ul id="tasa">
                                                 <li><a href="tasa.html"><i class="fas fa-check-circle"></i>Total</a></li>
                                                 <li><a href="#"><i class="fas fa-pills"></i>Sin Medicamentos</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#"><i class="fas fa-comments"></i>Comportamiento Comunicaciones</a>
-                                            <ul>
+                                            <ul id="comunicaciones">
                                                 <li><a href="general.html"><i class="fas fa-thumbtack"></i>General</a></li>
                                                 <li><a href="comite_red.html"><i class="fas fa-network-wired"></i>Vicepresidencia de Red</a></li>
                                                 <li><a href="comite_riesgo.html"><i class="fas fa-exclamation-triangle"></i>Vicepresidencia de Riesgo</a></li>
@@ -324,6 +326,34 @@
           
     </main>
     
+    <script>
+        document.getElementById('searchMenu').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                const query = this.value.toLowerCase();
+        
+                // Diccionario de términos y sus IDs
+                const rutas = {
+                    "pqr": "#submenu-pqr",
+                    "acompañamiento": "#submenu-acompanamiento",
+                    "seguimiento": "#submenu-seguimiento",
+                    "modelo": "#submenu-modelo",
+                    "experiencia": "#submenu-experiencia",
+                    "participación": "#submenu-participacion",
+                    "participacion": "#submenu-participacion" // sin tilde por si acaso
+                };
+        
+                const destino = Object.entries(rutas).find(([clave]) => query.includes(clave));
+        
+                if (destino) {
+                    window.location.hash = destino[1];
+                } else {
+                    alert("No se encontró la sección.");
+                }
+            }
+        });
+    </script>
+        
 
+    
 </body>
 </html>
