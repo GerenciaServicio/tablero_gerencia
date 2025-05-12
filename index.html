@@ -322,38 +322,8 @@
               <a href="#" class="tarjeta-boton">Ver más</a>
             </div>
           </section>
-          
-          
+         
     </main>
-    
-    <script>
-        document.getElementById('searchMenu').addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                const query = this.value.toLowerCase();
-        
-                // Diccionario de términos y sus IDs
-                const rutas = {
-                    "pqr": "#submenu-pqr",
-                    "acompañamiento": "#submenu-acompanamiento",
-                    "seguimiento": "#submenu-seguimiento",
-                    "modelo": "#submenu-modelo",
-                    "experiencia": "#submenu-experiencia",
-                    "participación": "#submenu-participacion",
-                    "participacion": "#submenu-participacion" // sin tilde por si acaso
-                };
-        
-                const destino = Object.entries(rutas).find(([clave]) => query.includes(clave));
-        
-                if (destino) {
-                    window.location.hash = destino[1];
-                } else {
-                    alert("No se encontró la sección.");
-                }
-            }
-        });
-    </script>
-        
-
     
 </body>
 </html>
