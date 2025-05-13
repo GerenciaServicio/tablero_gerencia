@@ -3,11 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablero Gerencia</title>
+    <title>Dirección Acompañamiento</title>
     <link rel="icon" type="image/png" href="iconomariposa.png">
-    <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />  
     <script src="https://kit.fontawesome.com/4a37fe9159.js" crossorigin="anonymous"></script>
+    
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .image-section {
+      flex: 1 1 40%;
+      background: url('acompanamiento_slide.jpg') no-repeat center center;
+      background-size: cover;
+      min-height: 400px;
+      border-radius: 10px;
+    }
+
+    .content-section {
+      flex: 1 1 60%;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+
+    .content-section h1 {
+      color: #003366;
+    }
+
+    .content-section h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .content-section p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .lineas-trabajo {
+      margin-top: 30px;
+    }
+
+    .lineas-trabajo h2 {
+      color: #003366;
+    }
+
+    .icons {
+      display: flex;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .icon-green {
+      background-color: #5c913b;
+    }
+
+    .icon-blue {
+      background-color: #005288;
+    }
+
+    .icon-purple {
+      background-color: #4566ad;
+    }
+
+    .icon-circle img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .icon-label {
+      color: #0071BC;
+      font-weight: bold;
+    }
+
+    .premisas {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .premisas b {
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .image-section {
+        height: 250px;
+      }
+    }
+  </style>
 </head>
 <body id="body">
     
@@ -16,34 +134,36 @@
             <div class="logo">
                 <img src="logo_sanitas.png" alt="">
             </div>
+
             <div class="search">
                 <input type="text" id="searchInput" placeholder="¿Qué deseas buscar?">
                 <div id="searchResults" class="search-results"></div>
             </div>
+              
         </div>
 
         <div class="container__menu">
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="index.html"></a>
-                        <li><a href="#" id="selected"><i class="fa-solid fa-comments"></i>PQR</a>
+                        <li><a href="index.html" id="selected"></a>
+                        <li><a href="#"><i class="fa-solid fa-comments"></i>PQR</a>
                             <ul>
                                 <li><a href="#"><i class="fas fa-file-alt"></i>PQR</a>
                                     <ul>
-                                        <li><a href="tasa.html"><i class="fas fa-chart-area"></i>Tasa</a>
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-check-circle"></i>Total</a></li>
+                                        <li><a href="#"><i class="fas fa-chart-area"></i>Tasa</a>
+                                            <ul id="tasa">
+                                                <li><a href="tasa.html"><i class="fas fa-check-circle"></i>Total</a></li>
                                                 <li><a href="#"><i class="fas fa-pills"></i>Sin Medicamentos</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#"><i class="fas fa-comments"></i>Comportamiento Comunicaciones</a>
-                                            <ul>
+                                            <ul id="comunicaciones">
                                                 <li><a href="general.html"><i class="fas fa-thumbtack"></i>General</a></li>
                                                 <li><a href="comite_red.html"><i class="fas fa-network-wired"></i>Vicepresidencia de Red</a></li>
                                                 <li><a href="comite_riesgo.html"><i class="fas fa-exclamation-triangle"></i>Vicepresidencia de Riesgo</a></li>
                                                 <li><a href="comite_operaciones.html"><i class="fas fa-cogs"></i>Vicepresidencia de Operaciones</a></li>
-                                                <li><a href="#"><i class="fas fa-clipboard-list"></i>PCRR</a></li> 
+                                                <li><a href="pcrr.html"><i class="fas fa-clipboard-list"></i>PCRR</a></li> 
                                             </ul>
                                         <li><a href="#"><i class="fas fa-stopwatch"></i>Oportunidad</a></li>
                                         <li><a href="#"><i class="fas fa-calendar-times"></i>Vencidas a fin de mes</a></li>
@@ -263,10 +383,56 @@
         </div>
 
     </header>
-    <main>
-        <iframe title="Estrategia PCRR 2025" width="1200" height="1800" src="https://app.powerbi.com/view?r=eyJrIjoiODhjNTE0ZjktNTU3Yi00ODFmLThlMWEtMTAyNzIwMzBhNzgwIiwidCI6IjBmYjgzYjhlLTE2ZDYtNGM3Yy05NjA5LWMxOTc1OTM0ZGZiOSIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </main>
-<script src="script.js"></script>
+    
+    <main class="acompanamiento">
+    <div class="container">
+    <div class="image-section"></div>
 
+    <div class="content-section">
+      <h1>Acompañamiento</h1>
+
+      <h2>Objetivo</h2>
+      <p>
+        Generar e implementar estrategias que permitan recuperar la confianza y experiencia de los afiliados a través del acompañamiento por parte de un grupo especializado que brinda orientación y solución a las necesidades de los afiliados.
+      </p>
+
+      <h2>Alcance</h2>
+      <p>
+        Inicia con el análisis de la información (caracterización, arquetipos, y voz del afiliado), continúa con la definición de la población a priorizar; seguido de la construcción e implementación de programas de acompañamiento para satisfacer las necesidades de los afiliados.
+      </p>
+
+      <div class="lineas-trabajo">
+        <h2>Líneas de trabajo</h2>
+        <div class="icons">
+          <div class="icon-item">
+            <div class="icon-circle icon-green">
+              <img src="https://cdn-icons-png.flaticon.com/512/1049/1049156.png" alt="Contención">
+            </div>
+            <div class="icon-label">Contención</div>
+          </div>
+          <div class="icon-item">
+            <div class="icon-circle icon-blue">
+              <img src="https://cdn-icons-png.flaticon.com/512/2819/2819194.png" alt="Resarcimiento">
+            </div>
+            <div class="icon-label">Resarcimiento</div>
+          </div>
+          <div class="icon-item">
+            <div class="icon-circle icon-purple">
+              <img src="https://cdn-icons-png.flaticon.com/512/3542/3542333.png" alt="Back de Operación">
+            </div>
+            <div class="icon-label">Back de Operación</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="premisas">
+        <b>Premisas:</b> Cercano, Confiable, Innovador
+      </div>
+    </div>
+  </div>
+
+  </main>
+  <script src="script.js"></script>
+   
 </body>
 </html>
