@@ -3,42 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acompañamiento</title>
+    <title>Dirección de PQR</title>
     <link rel="icon" type="image/png" href="iconomariposa.png">
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="pqr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />  
+    
     <script src="https://kit.fontawesome.com/4a37fe9159.js" crossorigin="anonymous"></script>
+    
+
 </head>
-<body id="body">
+<body>
     
     <header>
         <div class="header__superior">
             <div class="logo">
                 <img src="logo_sanitas.png" alt="">
             </div>
+
             <div class="search">
                 <input type="text" id="searchInput" placeholder="¿Qué deseas buscar?">
                 <div id="searchResults" class="search-results"></div>
             </div>
+              
         </div>
 
         <div class="container__menu">
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="index.html"></a>
+                        <li><a href="index.html" id="selected"></a>
                         <li><a href="#"><i class="fa-solid fa-comments"></i>PQR</a>
                             <ul>
                                 <li><a href="#"><i class="fas fa-file-alt"></i>PQR</a>
                                     <ul>
                                         <li><a href="#"><i class="fas fa-chart-area"></i>Tasa</a>
-                                            <ul>
+                                            <ul id="tasa">
                                                 <li><a href="tasa.html"><i class="fas fa-check-circle"></i>Total</a></li>
                                                 <li><a href="#"><i class="fas fa-pills"></i>Sin Medicamentos</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#"><i class="fas fa-comments"></i>Comportamiento Comunicaciones</a>
-                                            <ul>
+                                            <ul id="comunicaciones">
                                                 <li><a href="general.html"><i class="fas fa-thumbtack"></i>General</a></li>
                                                 <li><a href="comite_red.html"><i class="fas fa-network-wired"></i>Vicepresidencia de Red</a></li>
                                                 <li><a href="comite_riesgo.html"><i class="fas fa-exclamation-triangle"></i>Vicepresidencia de Riesgo</a></li>
@@ -68,7 +74,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#" id="selected"><i class="fa-solid fa-users"></i>Acompañamiento</a>
+                        <li><a href="#"><i class="fa-solid fa-users"></i>Acompañamiento</a>
                             <ul>
                                 <li><a href="contencion.html"><i class="fas fa-shield-alt"></i>Contención</a></li>
                                 <li><a href="#"><i class="fas fa-undo"></i>Recuperación de la Experiencia</a>
@@ -79,7 +85,7 @@
                                 </li>
                                 <li><a href="#"><i class="fas fa-star"></i>PQR Premium</a>
                                     <ul>
-                                        <li><a href="#"><i class="fas fa-chart-area"></i>Tasa</a></li>
+                                        <li><a href="pqr_premium.html"><i class="fas fa-chart-area"></i>Tasa</a></li>
                                         <li><a href="#"><i class="fas fa-comments"></i>Comportamiento Comunicaciones</a></li>
                                         <li><a href="#"><i class="fas fa-stopwatch"></i>Oportunidad</a></li>
                                         <li><a href="#"><i class="fas fa-calendar-times"></i>Vencidas a fin de mes</a></li>
@@ -263,10 +269,81 @@
         </div>
 
     </header>
-    <main>
-        <iframe title="Premium Acompañamiento" width="1200" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiNTU3YjJhZDItNTdmOS00NDRiLThiMTItOTQzMzRjNzdjZmI1IiwidCI6IjBmYjgzYjhlLTE2ZDYtNGM3Yy05NjA5LWMxOTc1OTM0ZGZiOSIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </main>
-<script src="script.js"></script>
 
+    <main class="pqr">
+        <h1>Dirección de PQR</h1>
+
+        <section class="tarjetas-menu">
+            <div class="tarjeta-menu">
+                <h2><i class="fas fa-comments"></i> PQR</h2>
+                <ul class="subopciones">
+                    <li class="has-submenu">
+                        <a href="#" class="toggle-submenu"><i class="fas fa-percentage"></i> Tasa</a>
+                        <ul class="submenu">
+                            <li><a href="tasa.html"><i class="fas fa-thumbtack"></i> Total</a></li>
+                            <li><a href="#"><i class="fas fa-pills"></i> Sin Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" class="toggle-submenu"><i class="fas fa-comments"></i> Comportamiento Comunicaciones</a>
+                        <ul class="submenu">
+                            <li><a href="general.html"><i class="fas fa-thumbtack"></i> General</a></li>
+                            <li><a href="comite_red.html"><i class="fas fa-network-wired"></i> Vicepresidencia de Red</a></li>
+                            <li><a href="comite_riesgo.html"><i class="fas fa-exclamation-triangle"></i> Vicepresidencia de Riesgo</a></li>
+                            <li><a href="comite_operaciones.html"><i class="fas fa-cogs"></i> Vicepresidencia de Operaciones</a></li>
+                            <li><a href="pcrr.html"><i class="fas fa-clipboard-list"></i> PCRR</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="oportunidad.html"><i class="fas fa-stopwatch"></i> Oportunidad</a></li>
+                    <li><a href="vencidas.html"><i class="fas fa-calendar-times"></i> Vencidas a fin de mes</a></li>
+                    <li><a href="cierre.html"><i class="fas fa-lock"></i> Cierre de PQR</a></li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-menu">
+                <h2><i class="fas fa-file-import"></i> Requerimientos</h2>
+                <ul class="subopciones">
+                    <li><a href="#">Requerimientos generales</a></li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-menu">
+                <h2><i class="fas fa-university"></i> Comportamiento Sector SNS</h2>
+                <ul class="subopciones">
+                    <li><a href="#">Estadísticas SNS</a></li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-menu">
+                <h2><i class="fas fa-coins"></i> Presupuesto</h2>
+                <ul class="subopciones">
+                    <li><a href="#">Resumen presupuestal</a></li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-menu">
+                <h2><i class="fas fa-tasks"></i> Planeación</h2>
+                <ul class="subopciones">
+                    <li><a href="#">Cronograma Anual</a></li>
+                    <li><a href="#">Compromisos</a></li>
+                    <li><a href="#">Indicadores de Desempeño</a></li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-menu">
+                <h2><i class="fas fa-building"></i> Administrativo</h2>
+                <ul class="subopciones">
+                    <li><a href="#">Dimensionamiento</a></li>
+                    <li><a href="#">Indicadores Operativos</a></li>
+                </ul>
+            </div>
+
+            <!-- Puedes seguir con las demás tarjetas igual que antes -->
+            
+        </section>
+    </main>
+  <script src="script.js"></script>
+   
 </body>
 </html>

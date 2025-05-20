@@ -23,6 +23,7 @@ const data = [
   { keyword: "central de urgencias", ruta: "Satisfacción → Central de Urgencias", url: "central_urgencias.html" },
   { keyword: "red externa", ruta: "Satisfacción → Red Externa", url: "red_externa.html" },
   { keyword: "canal presencial", ruta: "Satisfacción → Canal Presencial", url: "canal_presencial.html" },
+  { keyword: "calidad", ruta: "Documentación → Calidad", url: "calidad.html" },
   { keyword: "satisfacción", ruta: "Satisfacción → Modulos PBS", url: "modulos_pbs.html" },
   { keyword: "satisfacción", ruta: "Satisfacción → Modulos Premium", url: "modulos_premium.html" },
   { keyword: "satisfacción", ruta: "Satisfacción → Centros Médicos", url: "centro_medico.html" },
@@ -64,6 +65,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Codigo para los submenus de la pagina de PQR//
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggles = document.querySelectorAll(".toggle-submenu");
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      const parent = this.parentElement;
+      const submenu = parent.querySelector(".submenu");
+      parent.classList.toggle("open");
+      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+    });
+  });
+});
+
 
 
 

@@ -1,0 +1,158 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.pqr {
+  padding: 60px 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main.pqr {
+  margin-top: 160px; /* Ajusta según la altura real del header */
+}
+
+.pqr h1 {
+  text-align: center;
+  color: #0073b6;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjetas-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.tarjeta-menu {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 25px 20px;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-menu:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-menu h2 {
+  color: #0073b6;
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.icono {
+  font-size: 36px;
+  color: #34ACD5;
+  margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0073b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #005a94;
+}
+
+.subopciones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subopciones li {
+  margin: 10px 0;
+  position: relative;
+}
+
+.subopciones li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.subopciones li a:hover {
+  color: #34ACD5;
+  text-decoration: underline;
+}
+
+.subopciones li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subopciones li a:hover {
+  color: #34ACD5;
+  text-decoration: underline;
+}
+
+.submenu {
+  margin-top: 8px;
+  margin-left: 20px;
+  display: none;
+  list-style: none;
+  padding-left: 0;
+}
+
+.submenu li {
+  margin: 6px 0;
+}
+
+.has-submenu > a.toggle-submenu::after {
+  content: "\f107"; /* flecha abajo */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.has-submenu.open > a.toggle-submenu::after {
+  transform: rotate(180deg);
+}
+
+

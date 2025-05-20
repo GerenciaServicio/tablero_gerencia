@@ -17,8 +17,10 @@ header{
     top: 0;
     left: 0;
     background: #f5f5f5;
+    z-index: 1000; /* Asegúrate que esté por encima de todo lo demás */
     
 }
+
 
 .header__superior {
     width: 100%;
