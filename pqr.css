@@ -67,7 +67,6 @@ main.pqr {
   gap: 10px;
 }
 
-
 .icono {
   font-size: 36px;
   color: #34ACD5;
@@ -154,5 +153,3 @@ main.pqr {
 .has-submenu.open > a.toggle-submenu::after {
   transform: rotate(180deg);
 }
-
-
