@@ -87,33 +87,35 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const rutas = {
     "index.html": "Indicadores Gerencia de Servicio",
-    "/tasa.html": "PQR → Tasa",
-    "/comite_red.html": "PQR → Vicepresidencia de Red",
-    "/comite_riesgo.html": "PQR → Vicepresidencia de Riesgo",
-    "/comite_operaciones.html": "PQR → Vicepresidencia de Operaciones",
-    "/pcrr.html": "PQR → PCRR",
-    "/oportunidad.html": "PQR → Oportunidad",
-    "/vencidas.html": "PQR → Vencidas a fin de mes",
-    "/cierre.html": "PQR → Cierre de PQR",
-    "/direccion_pqr.html": "PQR → Dirección de PQR",
-    "/contencion.html": "Acompañamiento → Contención",
-    "/medicamentos.html": "Modelo → Medicamentos",
-    "/trazadores.html": "Satisfacción → Trazadores",
-    "/calidad.html": "Documentación → Calidad",
-    "/canal_presencial.html": "Satisfacción → Canal Presención",
-    "/central_urgencias.html": "Satisfacción → Central de Urgencias",
-    "/centro_medico.html": "Satisfacción → Centro Médico",
-    "/modulos_pbs.html": "Satisfacción → Modulos PBS",
-    "/modulos_premium.html": "Satisfacción → Modulos Premium",
-    "/red_externa.html": "Satisfacción → Red Externa",
-    "/acompanamiento.html": "Acompañamiento",
-    "index.html": "Inicio"
+    "tasa.html": "PQR → Tasa",
+    "comite_red.html": "PQR → Vicepresidencia de Red",
+    "comite_riesgo.html": "PQR → Vicepresidencia de Riesgo",
+    "comite_operaciones.html": "PQR → Vicepresidencia de Operaciones",
+    "pcrr.html": "PQR → PCRR",
+    "oportunidad.html": "PQR → Oportunidad",
+    "vencidas.html": "PQR → Vencidas a fin de mes",
+    "cierre.html": "PQR → Cierre de PQR",
+    "direccion_pqr.html": "PQR → Dirección de PQR",
+    "contencion.html": "Acompañamiento → Contención",
+    "medicamentos.html": "Modelo → Medicamentos",
+    "trazadores.html": "Satisfacción → Trazadores",
+    "calidad.html": "Documentación → Calidad",
+    "canal_presencial.html": "Satisfacción → Canal Presención",
+    "central_urgencias.html": "Satisfacción → Central de Urgencias",
+    "centro_medico.html": "Satisfacción → Centro Médico",
+    "modulos_pbs.html": "Satisfacción → Modulos PBS",
+    "modulos_premium.html": "Satisfacción → Modulos Premium",
+    "red_externa.html": "Satisfacción → Red Externa",
+    "acompanamiento.html": "Acompañamiento",
+    
     // Agrega aquí todas las demás rutas necesarias
   };
 
-  const path = window.location.pathname.toLowerCase();
-  const breadcrumb = rutas[path] || "Ruta no definida";
-  const fechaActualizacion = "22 de mayo de 2025 - 10:30 a.m."; // Puedes automatizarlo también
+  // Obtenemos solo el nombre del archivo sin la ruta completa
+  const path = window.location.pathname.split("/").pop().toLowerCase();
+
+  const breadcrumb = rutas[path] || "Ruta no identificada";
+  const fechaActualizacion = "22 de mayo de 2025 - 10:30 a.m.";
 
   document.getElementById("breadcrumb").textContent = `Ruta: ${breadcrumb}`;
   document.getElementById("last-update").textContent = `Última actualización: ${fechaActualizacion}`;
