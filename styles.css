@@ -26,7 +26,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 40px; /* espacio entre logo y barra de búsqueda */
+    gap: 200px; /* espacio entre logo y barra de búsqueda */
 }
 
 
@@ -54,7 +54,7 @@ main {
 .container__menu{
     width: 100%;
     height: 70px;
-    background: #f2f8ec;
+    background: #AEED82;
     padding: 0 20px;
 }
 
@@ -65,18 +65,35 @@ main {
 }
 
 /*formato para los cajones del menu principal*/
+
 nav > ul > li > a {
-    width: 100%; /* Fijás un ancho en px o em */
+  display: inline-flex; /* o flex si quieres que ocupen todo el alto */
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px; /* Espaciado alrededor */
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 300ms ease;
+  height: 100%;
+  white-space: normal; /* Permite el salto de línea */
+  text-align: center;
+ 
+}
+/*configuración Icono de casa para la página inicial
+nav > ul > li > a {
+    width: 100%; /* Fijás un ancho en px o em 
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; /* O center, según tu gusto */
+    justify-content: center; /* O center, según tu gusto 
     padding: 14px;
     color: black;
     text-transform: uppercase;
     font-size: 14px;
     transition: all 300ms ease;
 }
+*/
 
 /*configuración Icono de casa para la página inicial
 nav > ul > li:first-child > a{
@@ -111,6 +128,7 @@ nav ul li{
     list-style: none;
     position: relative;
     color: black;
+    max-width: 185px
 }
 
 nav > ul > li > a:hover{
@@ -150,7 +168,7 @@ nav ul li  ul{
     width: 200px;
     display: flex;
     flex-direction: column;
-    background: #E2EFDA;
+    background: #AEED82;
     position: absolute;
     top: 90px;
     left: -5px;
@@ -176,7 +194,7 @@ nav >ul >li > ul:before{
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 12px solid #E2EFDA;
+    border-bottom: 12px solid #AEED82;
     position: absolute;
     top: -12px;
     left: 20px; 
@@ -210,10 +228,10 @@ nav ul li ul li a:hover{
 
 /*Formato fondo submenu Nivel 1*/
 nav > ul > li > ul > li > ul {
-    width: 200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background: #E2EFDA;
+    background: #AEED82;
     position: absolute;
     top: 0;
     left: 100%;
@@ -257,10 +275,10 @@ nav > ul > li > ul > li > ul > li > a:hover{
 /* submenu 2 nivel */
 
 nav > ul > li > ul > li > ul > li > ul {
-    width: 250px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background: #E2EFDA;
+    background: #AEED82;
     position: absolute;
     top: 0;
     left: 100%;
@@ -304,10 +322,10 @@ nav > ul > li > ul > li > ul > li > a:hover{
 /* submenu 3 nivel */
 
 nav > ul > li > ul > li > ul > li > ul > li > ul{
-    width: 250px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background: #E2EFDA;
+    background: #AEED82;
     position: absolute;
     top: 0;
     left: 100%;

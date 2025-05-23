@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "oportunidad.html": "PQR → Oportunidad",
     "vencidas.html": "PQR → Vencidas a fin de mes",
     "cierre.html": "PQR → Cierre de PQR",
-    "direccion_pqr.html": "PQR → Dirección de PQR",
+    "direccion_pqr.html": "Dirección de PQR",
     "contencion.html": "Acompañamiento → Contención",
     "medicamentos.html": "Modelo → Medicamentos",
     "trazadores.html": "Satisfacción → Trazadores",
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "modulos_pbs.html": "Satisfacción → Modulos PBS",
     "modulos_premium.html": "Satisfacción → Modulos Premium",
     "red_externa.html": "Satisfacción → Red Externa",
-    "acompanamiento.html": "Acompañamiento"
+    "acompanamiento.html": "Dirección de Acompañamiento"
   };
 
   // Mostrar breadcrumb
