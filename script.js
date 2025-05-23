@@ -85,6 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // codigo para las rutas de las páginas de ubiacion actual: //
 
 document.addEventListener("DOMContentLoaded", () => {
+  const path = window.location.pathname.split("/").pop().toLowerCase();
+
+  // Breadcrumb dinámico (si ya lo tienes definido)
   const rutas = {
     "index.html": "Indicadores Gerencia de Servicio",
     "tasa.html": "PQR → Tasa",
@@ -107,24 +110,23 @@ document.addEventListener("DOMContentLoaded", () => {
     "modulos_premium.html": "Satisfacción → Modulos Premium",
     "red_externa.html": "Satisfacción → Red Externa",
     "acompanamiento.html": "Acompañamiento",
-    
-    // Agrega aquí todas las demás rutas necesarias
+    // Agrega las demás rutas
   };
 
-  // Obtenemos solo el nombre del archivo sin la ruta completa
-  const path = window.location.pathname.split("/").pop().toLowerCase();
+  document.getElementById("breadcrumb").textContent = `Ruta: ${rutas[path] || "Ruta no identificada"}`;
 
-  const breadcrumb = rutas[path] || "Ruta no identificada";
-  const fechaActualizacion = "22 de mayo de 2025 - 10:30 a.m.";
-
-  document.getElementById("breadcrumb").textContent = `Ruta: ${breadcrumb}`;
-  document.getElementById("last-update").textContent = `Última actualización: ${fechaActualizacion}`;
+  // Cargar fecha de actualización desde JSON
+  fetch("actualizaciones.json")
+    .then(res => res.json())
+    .then(data => {
+      if (data[path]) {
+        const { fecha, hora } = data[path];
+        document.getElementById("last-update").textContent = `Última actualización: ${fecha} - ${hora}`;
+      } else {
+        document.getElementById("last-update").textContent = "Última actualización: no disponible";
+      }
+    })
+    .catch(() => {
+      document.getElementById("last-update").textContent = "Última actualización: no disponible";
+    });
 });
-
-
-
-
-
-
-
-
