@@ -85,9 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
 // codigo para las rutas de las páginas de ubiacion actual: //
 
 document.addEventListener("DOMContentLoaded", () => {
-  const path = window.location.pathname.split("/").pop().toLowerCase();
+  const archivo = window.location.pathname.split("/").pop().toLowerCase();
 
-  // Breadcrumb dinámico (si ya lo tienes definido)
   const rutas = {
     "index.html": "Indicadores Gerencia de Servicio",
     "tasa.html": "PQR → Tasa",
@@ -109,18 +108,18 @@ document.addEventListener("DOMContentLoaded", () => {
     "modulos_pbs.html": "Satisfacción → Modulos PBS",
     "modulos_premium.html": "Satisfacción → Modulos Premium",
     "red_externa.html": "Satisfacción → Red Externa",
-    "acompanamiento.html": "Acompañamiento",
-    // Agrega las demás rutas
+    "acompanamiento.html": "Acompañamiento"
   };
 
-  document.getElementById("breadcrumb").textContent = `Ruta: ${rutas[path] || "Ruta no identificada"}`;
+  // Mostrar breadcrumb
+  document.getElementById("breadcrumb").textContent = `${rutas[archivo] || "Ruta no identificada"}`;
 
-  // Cargar fecha de actualización desde JSON
+  // Cargar JSON
   fetch("actualizaciones.json")
     .then(res => res.json())
     .then(data => {
-      if (data[path]) {
-        const { fecha, hora } = data[path];
+      if (data[archivo]) {
+        const { fecha, hora } = data[archivo];
         document.getElementById("last-update").textContent = `Última actualización: ${fecha} - ${hora}`;
       } else {
         document.getElementById("last-update").textContent = "Última actualización: no disponible";
