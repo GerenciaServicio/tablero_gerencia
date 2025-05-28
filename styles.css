@@ -623,3 +623,10 @@ nav > ul > li > ul > li > ul > li > ul > li > a:hover{
   margin-bottom: 10px;
   color: #0073b6;
 }
+
+.dashboard a {
+  font-size: 30px;
+  font-style: inherit;
+  margin-bottom: 10px;
+  color: #0073b6;
+}
