@@ -605,18 +605,18 @@ nav > ul > li > ul > li > ul > li > ul > li > a:hover{
   color: #666;
 }
 
-/* Estilo para la pagina de indicadores trazadores
+
 
 .dashboard {
   margin: 40px auto;
-  max-width: 1360px;
+  height: 2000;
+  max-width: 1400px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
-*/
 
 .dashboard h2 {
   font-size: 20px;
