@@ -62,5 +62,29 @@
   "index.html": {
     "fecha": "13 de junio de 2025",
     "hora": "08:45 a.m."
+  },
+  "acompanamiento.html": {
+    "fecha": "13 de junio de 2025",
+    "hora": "04:15 p.m."
+  },
+    "direccion_experiencia.html": {
+    "fecha": "13 de junio de 2025",
+    "hora": "04:15 p.m."
+  },
+    "direccion_medicion_seguimiento.html": {
+    "fecha": "13 de junio de 2025",
+    "hora": "04:15 p.m."
+  },
+    "direccion_modelo.html": {
+    "fecha": "13 de junio de 2025",
+    "hora": "04:15 p.m."
+  },
+    "direccion_participacion.html": {
+    "fecha": "13 de junio de 2025",
+    "hora": "04:15 p.m."
+  },
+    "direccion_pqr.html": {
+    "fecha": "13 de junio de 2025",
+    "hora": "04:15 p.m."
   }
 }
