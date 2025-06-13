@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "oportunidad.html": "PQR → Oportunidad",
     "vencidas.html": "PQR → Vencidas a fin de mes",
     "cierre.html": "PQR → Cierre de PQR",
-    "direccion_pqr.html": "Dirección de PQR",
     "contencion.html": "Acompañamiento → Contención",
     "medicamentos.html": "Modelo → Medicamentos",
     "trazadores.html": "Satisfacción → Trazadores",
@@ -108,7 +107,12 @@ document.addEventListener("DOMContentLoaded", () => {
     "modulos_pbs.html": "Satisfacción → Modulos PBS",
     "modulos_premium.html": "Satisfacción → Modulos Premium",
     "red_externa.html": "Satisfacción → Red Externa",
-    "acompanamiento.html": "Dirección de Acompañamiento"
+    "direccion_pqr.html": "Dirección de PQR",
+    "acompanamiento.html": "Dirección de Acompañamiento",
+    "direccion_medicion_seguimiento.html": "Dirección de Medición y Seguimiento",
+    "direccion_experiencia.html": "Dirección de Experiencia",
+    "direccion_modelo.html": "Dirección de Modelo",
+    "direccion_participacion.html": "Dirección de Participación Ciudadana"
   };
 
   // Mostrar breadcrumb
