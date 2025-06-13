@@ -153,3 +153,27 @@ main.pqr {
 .has-submenu.open > a.toggle-submenu::after {
   transform: rotate(180deg);
 }
+
+.has-submenu  ul li > a.toggle-submenu::after {
+  content: "\f107"; /* flecha abajo */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.has-submenu.open ul li  > a.toggle-submenu::after {
+  transform: rotate(180deg);
+}
+
+.submenu  li > a.toggle-submenu::after {
+  content: "\f107"; /* flecha abajo */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.submenu.open li  > a.toggle-submenu::after {
+  transform: rotate(180deg);
+}
