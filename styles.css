@@ -644,6 +644,8 @@ nav > ul > li > ul > li > ul > li > ul > li > a:hover{
 .titulo-container {
   text-align: center;
   margin-top: 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
 .titulo-enlace {
