@@ -1,54 +1,54 @@
 {
   "tasa.html": {
-    "fecha": "04 de junio de 2025",
+    "fecha": "13 de agosto de 2025",
     "hora": "8:18 a.m."
   },
   "trazadores.html": {
-    "fecha": "14 de julio de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "9:25 a.m."
   },
   "comite_red.html": {
-    "fecha": "06 de junio de 2025",
+    "fecha": "05 de agosto de 2025",
     "hora": "11:17 a.m."
   },
   "comite_operaciones.html": {
-    "fecha": "06 de junio de 2025",
+    "fecha": "15 de agosto de 2025",
     "hora": "04:22 p.m."
   },
   "comite_riesgo.html": {
-    "fecha": "06 de junio de 2025",
+    "fecha": "05 de agosto de 2025",
     "hora": "02:47 p.m."
   },
   "centro_medico.html": {
-    "fecha": "14 de julio de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "09:25 a.m."
   },
   "canal_presencial.html": {
-    "fecha": "14 de julio de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "09:25 a.m."
   },
   "central_urgencias.html": {
-    "fecha": "14 de julio de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "09:25 a.m."
   },
   "modulos_pbs.html": {
-    "fecha": "14 de julio de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "02:54 p.m."
   },
   "modulos_premium.html": {
-    "fecha": "14 de julio de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "09:25 a.m."
   },
   "red_externa.html": {
-    "fecha": "14 de julio de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "09:25 a.m."
   },
   "calidad.html": {
-    "fecha": "07 de julio de 2025",
+    "fecha": "31 de julio de 2025",
     "hora": "07:54 a.m."
   },
   "medicamentos.html": {
-    "fecha": "04 de agosto de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "09:36 a.m."
   },
   "general.html": {
@@ -56,15 +56,15 @@
     "hora": "09:40 a.m."
   },
   "pcrr.html": {
-    "fecha": "29 de julio de 2025",
+    "fecha": "15 de agosto de 2025",
     "hora": "02:16 p.m."
   },
   "index.html": {
-    "fecha": "04 de agosto de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "10:11 a.m."
   },
   "acompanamiento.html": {
-    "fecha": "09 de julio de 2025",
+    "fecha": "19 de agosto de 2025",
     "hora": "04:15 p.m."
   },
     "direccion_experiencia.html": {
@@ -84,7 +84,7 @@
     "hora": "04:15 p.m."
   },
     "direccion_pqr.html": {
-    "fecha": "14 de julio de 2025",
-    "hora": "04:15 p.m."
+    "fecha": "19 de agosto de 2025",
+    "hora": "09:29 a.m."
   }
 }
