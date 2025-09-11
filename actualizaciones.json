@@ -1,23 +1,23 @@
 {
   "tasa.html": {
-    "fecha": "13 de agosto de 2025",
-    "hora": "8:18 a.m."
+    "fecha": "10 de septiembre de 2025",
+    "hora": "4:29 p.m."
   },
   "trazadores.html": {
     "fecha": "19 de agosto de 2025",
     "hora": "9:25 a.m."
   },
   "comite_red.html": {
-    "fecha": "05 de agosto de 2025",
-    "hora": "11:17 a.m."
+    "fecha": "03 de septiembre de 2025",
+    "hora": "03:40 p.m."
   },
   "comite_operaciones.html": {
-    "fecha": "15 de agosto de 2025",
-    "hora": "04:22 p.m."
+    "fecha": "10 de septiembre de 2025",
+    "hora": "04:59 p.m."
   },
   "comite_riesgo.html": {
-    "fecha": "05 de agosto de 2025",
-    "hora": "02:47 p.m."
+    "fecha": "08 de septiembre de 2025",
+    "hora": "04:38 p.m."
   },
   "centro_medico.html": {
     "fecha": "19 de agosto de 2025",
@@ -48,7 +48,7 @@
     "hora": "07:54 a.m."
   },
   "medicamentos.html": {
-    "fecha": "20 de agosto de 2025",
+    "fecha": "11 de septiembre de 2025",
     "hora": "09:36 a.m."
   },
   "general.html": {
@@ -56,11 +56,11 @@
     "hora": "09:40 a.m."
   },
   "pcrr.html": {
-    "fecha": "19 de agosto de 2025",
+    "fecha": "10 de septiembre de 2025",
     "hora": "02:16 p.m."
   },
   "index.html": {
-    "fecha": "21 de agosto de 2025",
+    "fecha": "11 de septiembre de 2025",
     "hora": "08:50 a.m."
   },
   "acompanamiento.html": {
@@ -84,7 +84,7 @@
     "hora": "04:15 p.m."
   },
     "direccion_pqr.html": {
-    "fecha": "19 de agosto de 2025",
+    "fecha": "11 de septiembre de 2025",
     "hora": "09:29 a.m."
   }
 }
